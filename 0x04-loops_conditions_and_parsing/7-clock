@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script do this and that
 i=0
-while [ $i -lt 12 ]
+while [ $i -lt 13 ]
 do
 	echo "Hour: $i"
 	j=1
