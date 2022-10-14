@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script do this and that
+ls > list
+for i in $(cut -b 3-45 list); do echo "$i"; done
