@@ -1,1 +1,1 @@
-readme file for ..
+loop and parsing in shell
