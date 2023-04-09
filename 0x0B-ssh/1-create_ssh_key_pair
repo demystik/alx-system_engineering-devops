@@ -1,0 +1,3 @@
+#!/usr/bin/bash env
+#this script create RSAD key pair with some additional requirements
+ssh-keygen -b 4096 -f school -p betty
