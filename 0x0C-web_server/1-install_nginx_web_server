@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #bash script that configure server with some requirements
 
-apt-get -y update
-apt-get -y install nginx
+sudo apt update -y
+sudo apt install nginx -y
 echo "Hello World!" | sudo tee /var/www/html/index.html > /dev/null
-sudo service nginx reload
+sudo service nginx start
