@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 #bash script that configure server with some requirements
 
-sudo apt update
+sudo apt update -y
 sudo apt install nginx -y
-ufw allow 'Nginx HTTP'
 echo "Hello World!" | sudo tee /var/www/html/index.html > /dev/null
 sudo service nginx reload
