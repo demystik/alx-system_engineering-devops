@@ -24,7 +24,7 @@ The specific list of projects contained follows:
 
 ## Author :black_nib:
 
-* __Tolulope Fakunle__ <[Tolulope05](https://github.com/Tolulope05)>
+* __Abdrasheed Thaoban__ <[demystik](https://github.com/demystik)>
 
 ## Acknowledgements :pray:
 
