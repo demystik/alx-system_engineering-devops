@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+#this file configure host using puppet
 class ssh_config {
   ssh::client::config { 'ssh_config':
     ensure                => present,
