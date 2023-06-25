@@ -1,3 +1,4 @@
+#this puppet create a file in /tmp
 file { '/tmp/school':
   ensure  => present,
   owner   => 'www-data',
