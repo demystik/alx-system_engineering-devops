@@ -1,0 +1,20 @@
+To kill ssh agent:
+eval $(ssh-agent -k)
+
+To start ssh agent:
+eval $(ssh-agent)
+
+To add new connection key:
+ssh-add <path_to_private_key>
+
+To check private key added to ssh agent:
+ssh-add -l
+
+To connect using a specific file 
+ssh -i ~/.ssh/file_name username@address
+
+To create a key with a filename and specific number of bits
+ssh-keygen -f filename -b num_of_bits
+
+To know more about keygen
+man ssh-keygen
