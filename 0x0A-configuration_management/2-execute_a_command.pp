@@ -1,4 +1,4 @@
-exec { "kill process":
-  command  => "pkill killmenow",
+exec { 'kill process':
+  command  => 'pkill killmenow',
   provider => 'shell',
 }
