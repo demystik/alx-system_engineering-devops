@@ -7,5 +7,5 @@ sudo apt install nginx -y
 #sudo sed -i 's/listen\s*80;/listen 80 default_server;/g' /etc/nginx/sites-available/default
 echo "Hello World!" >> var/www/default
 redirection="location /redirect_me {\\nreturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\\n}"
-sudo sed -i "/server/a $(echo $redirection)" etc/nginx/sites-available/default
+sudo sed -i "/server/a $redirection" etc/nginx/sites-available/default
 sudo service nginx start
