@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #This file does this and that
 sudo apt update -y
-sudo apt-get install nginx -y
+sudo apt install nginx -y
 #sudo sed -i 's/listen\s*80;/listen 80 default_server;/g' /etc/nginx/sites-available/default
-sudo cho "Hello World!" >> var/www/default
+sudo echo "Hello World!" >> var/www/default
 sudo service nginx start
