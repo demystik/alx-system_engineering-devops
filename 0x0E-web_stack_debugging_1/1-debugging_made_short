@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#This file fix listen port issue on sites-enabled file
+#This short file to  fix listen port issue on sites-enabled file
 
 sudo rm /etc/nginx/sites-enabled/default
 sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
