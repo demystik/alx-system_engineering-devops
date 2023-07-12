@@ -21,7 +21,6 @@ defaults
 #       option http-keep-alive
 #       option forwardfor
 #       redirect scheme https if !{ ssl_fc }
-
 #        balance roundrobin
 #       server 66714-web-01 18.207.3.56:80 check
 #        server 66714-web-02 54.210.91.116:80 check
