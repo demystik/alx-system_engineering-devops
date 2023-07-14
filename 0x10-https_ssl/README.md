@@ -24,3 +24,8 @@ SSL termination.
 * **3. No loophole in your website traffic**
   * [100-redirect_http_to_https](./100-redirect_http_to_https): HAproxy
   configuration file that automatically redirects HTTP traffic to HTTPS.
+
+## RESOURCES
+> https://www.digitalocean.com/community/tutorials/how-to-use-haproxy-to-set-up-http-load-balancing-on-an-ubuntu-vps
+>https://www.digitalocean.com/community/tutorials/how-to-secure-haproxy-with-let-s-encrypt-on-ubuntu-14-04
+>https://gist.github.com/thisismitch/7c91e9b2b63f837a0c4b
