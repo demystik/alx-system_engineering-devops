@@ -14,4 +14,4 @@ In this project, I used `ufw` to configure firewalls on my issued web servers.
   configures a firewall to redirect port `8080/TCP` to port `80/TCP`.
 
 ## Resources
- * [digital_ocean_site](./https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-20-04)
+ * [digital_ocean_site](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-20-04)
