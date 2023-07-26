@@ -1,0 +1,12 @@
+command to see installed packages
+sudo dpkg-query -l | less
+
+command to check ubuntu version
+lsb_release -a
+To start service instead of using systemctl
+-- sudo service docker start
+-- sudo service docker stop
+-- sudo service docker status
+-- sudo service docker restart
+To check services names
+-- service --status-all
