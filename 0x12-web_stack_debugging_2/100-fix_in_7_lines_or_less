@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-#script that configures container to run as a user with other config.
-awk '{gsub(/#user www-data/, "user nginx")}1' /etc/nginx/nginx.conf > tmp.conf && mv tmp.conf /etc/nginx/nginx.conf
-awk '{gsub(/80/, "8080")}1' /etc/nginx/sites-available/default > tmp.default && mv tmp.default /etc/nginx/sites-available/default
-chmod 644 /etc/nginx/nginx.conf
-pkill apache2
-sudo -u nginx service nginx start

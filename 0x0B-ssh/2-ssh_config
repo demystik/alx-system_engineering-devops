@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-#client side configuration
-
-Host *
-    PasswordAuthentication no
-    IdentifyFile ~/.ssh/school

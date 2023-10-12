@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-#This short file to  fix listen port issue on sites-enabled file
-sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-sudo service nginx restart
-kill "$(pgrep 'nginx' | head -1)"
