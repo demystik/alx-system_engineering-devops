@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-"This is used to connect to web server"
+#This is used to connect to web server
 ssh -i ~/.ssh/school ubuntu@52.91.123.152
 
