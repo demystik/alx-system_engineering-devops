@@ -10,7 +10,7 @@ sudo apt-get -y update
 
 sudo apt-get -y install haproxy=2.8.\*
 
-#echo "ENABLED=1" >> /etc/default/haproxy
+echo "ENABLED=1" >> /etc/default/haproxy
 
 cp -a /etc/haproxy/haproxy.cfg{,.orig}
 
