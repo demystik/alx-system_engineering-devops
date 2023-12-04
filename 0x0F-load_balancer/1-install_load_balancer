@@ -9,6 +9,10 @@ sudo apt-get -y install haproxy=2.8.\*
 echo "ENABLED=1" >> /etc/default/haproxy
 
 echo "
+	defaults
+		mode http
+		option httpclose
+		option forwardfor
 	frontend web_frontend
 	    	bind *:80
 	    	default_backend web_servers
