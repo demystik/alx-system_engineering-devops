@@ -7,6 +7,10 @@ configuration of the server using Nginx.
 
 The server is accessible at [bdbnb.site](http://bdbnb.site).
 
+## Resources
+https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04
+
+
 ## Tasks :page_with_curl:
 
 * **0. Transfer a file to your server**
