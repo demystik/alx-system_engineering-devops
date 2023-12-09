@@ -1,6 +1,7 @@
 # LOAD_BALANCER readme
 
 ### resources
+https://haproxy.debian.net/#distribution=Ubuntu&release=focal&version=2.8
 https://www.haproxy.com/documentation/haproxy-configuration-tutorials/core-concepts/acls/
 https://repost.aws/knowledge-center/linux-static-hostname
 https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts
