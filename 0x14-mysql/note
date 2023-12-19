@@ -1,0 +1,13 @@
+How to configure mysql 5.7 
+
+https://docs.vultr.com/how-to-install-mysql-5-7-on-ubuntu-20-04
+
+when you see this erorr, change the pub key to your actual pub key.
+
+The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 467B942D3A79BD29
+
+
+How to install mysql on ubuntu digital ocean.
+https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql
