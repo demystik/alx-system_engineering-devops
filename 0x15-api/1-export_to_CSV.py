@@ -1,26 +1,18 @@
 #!/usr/bin/python3
-"""Task #0, extendt this Python script to
-export data in the CSV format."""
+"""Exports to-do list information for a given employee ID to CSV format."""
+import csv
+import requests
+import sys
 
 if __name__ == "__main__":
-    import csv
-    import json
-    import requests
-    import sys
+    user_id = sys.argv[1]
+    url = "https://jsonplaceholder.typicode.com/"
+    user = requests.get(url + "users/{}".format(user_id)).json()
+    username = user.get("username")
+    todos = requests.get(url + "todos", params={"userId": user_id}).json()
 
-    _id = str(sys.argv[1])
-    endpoint = f"https://jsonplaceholder.typicode.com/users/{_id}?_embed=todos"
-    response = requests.get(endpoint)
-    resp = response.text
-    data = json.loads(resp)
-    name = str(data.get('name'))
-    allTasks = data.get('todos')
-    csv_filename = f"{_id}.csv"
-
-    with open(csv_filename, mode='w', newline='') as csvfile:
-        csv_writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
-        for task in allTasks:
-            task_completed_status = str(task.get('completed'))
-            task_title = task.get('title')
-            csv_writer.writerow([str(_id), str(name),
-                                task_completed_status, task_title])
+    with open("{}.csv".format(user_id), "w", newline="") as csvfile:
+        writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
+        [writer.writerow(
+            [user_id, username, t.get("completed"), t.get("title")]
+         ) for t in todos]
