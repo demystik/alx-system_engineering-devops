@@ -22,5 +22,5 @@ if __name__ == "__main__":
         for task in allTasks:
             task_completed_status = str(task.get('completed'))
             task_title = task.get('title')
-            csv_writer.writerow([_id, name,
+            csv_writer.writerow([str(_id), str(name),
                                 task_completed_status, task_title])
