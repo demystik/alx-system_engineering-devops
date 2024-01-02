@@ -19,4 +19,4 @@ if __name__ == "__main__":
                  if todo.get('completed') is True]
     print(f"Employee {name} is done with tasks({len(completed)}/{total}):")
     for task in completed:
-        print(f"\t{task.get('title')}")
+        print(f"\t {task.get('title')}")
